@@ -1,0 +1,13 @@
+<html>
+	<body>
+	select text!!<br>
+		<script type="text/javascript">
+			var js = location.href.replace('index.html','js/tvglaSelection.js');
+			var bml = "javascript:var s=document.createElement('script');s.src='" + js + "';document.body.appendChild(s);";
+			var a = document.createElement("a");
+			a.href = bml;
+			a.innerHTML = 'bookmarklet link'
+			document.body.appendChild(a);
+		</script>
+	</body>
+</html>
