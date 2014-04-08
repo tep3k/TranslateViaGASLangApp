@@ -12,7 +12,7 @@ function doGet(e) {
     sourceLang = e.parameter.source;
   }
   var targetLang = 'ja';
-  if (e.parameter.targetLang){
+  if (e.parameter.target){
     targetLang = e.parameter.target;
   }
 
