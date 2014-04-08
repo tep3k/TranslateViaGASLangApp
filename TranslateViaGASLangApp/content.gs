@@ -8,7 +8,13 @@ function doGet(e) {
   // set langage code
   // available langage code -> https://developers.google.com/translate/v2/using_rest#language-params
   var sourceLang = 'en';
+  if (e.parameter.source){
+    sourceLang = e.parameter.source;
+  }
   var targetLang = 'ja';
+  if (e.parameter.targetLang){
+    targetLang = e.parameter.target;
+  }
 
   // translate text
   translatedText = LanguageApp.translate(sourceText, sourceLang, targetLang)
